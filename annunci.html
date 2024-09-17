@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Presto.it - La tua villa dei sogni la puoi trovare solo qui</title>
+    
+        <!-- CSS Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+        <!-- Font icons Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- My style -->
+        <link rel="stylesheet" href="./styles/stile-presto.css">
+    
+    
+        </head>
+<body>
+
+    <div class="myContainer ">
+
+      
+
+      <header class="header my-0 ">
+      
+        <a href="/index.html"><img src="img/logo.png" width=120px" alt="Logo" class="logo">
+        </a>
+        <nav class="menu  ">
+          <ul class="">
+            <li><a class="" href="index.html">Home</a></li>
+            <li><a class="" href="annunci.html">Annunci</a></li>
+            <li><a class="" href="about.html">About</a></li>
+          </ul>
+        </nav>
+        
+      
+        
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+      </header>
+            
+       
+            <!-- END Nav BAR -->  
+
+        </header >
+
+        <main class="px-1" style="background-image:  url(img/parete.jpg);">
+
+            <div class="row justify-content-center ">
+
+              <aside class="col-md-2 col-lg-2 col-sm-12 bg-light p-3 h-50  mt-3 resp bg-dark c1">
+               
+                <form id="search-form ">
+                    <div class="mb-1 ">
+                        <label for="filter-regione" class="form-label">Regione</label>
+                        <select id="filter-regione" class="form-select">
+                            <option value="">Tutte le Regioni</option>
+                            <!-- Opzioni aggiunte dinamicamente -->
+                        </select>
+                    </div>
+
+                    <div class="mb-1">
+                      <label for="filter-metri" class="form-label">Metri Quadrati (mq)</label>
+                      <input type="number" id="filter-metri" class="form-control" placeholder="Es. 80">
+                  </div>
+
+                    <div class="mb-1">
+                      <label for="filter-giardino" class="form-label">Giardino</label>
+                      <select id="filter-giardino" class="form-select">
+                          <option value="">Qualunque</option>
+                          <option value="true">Sì</option>
+                          <option value="false">No</option>
+                      </select>
+                  </div>
+                  
+                    <div class="mb-1">
+                        <label for="filter-piscina" class="form-label">Piscina</label>
+                        <select id="filter-piscina" class="form-select">
+                            <option value="">Qualunque</option>
+                            <option value="true">Sì</option>
+                            <option value="false">No</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-1">
+                        <label for="filter-prezzo" class="form-label">Prezzo massimo (€)</label>
+                        <input type="number" id="filter-prezzo" class="form-control" placeholder="Es. 500000">
+                    </div>
+                    <button type="button" id="reset-filters" class="myButton mt-1">Resetta Filtri</button>
+                </form>
+              </aside>
+             
+              <!-- Elenco degli annunci -->
+              <div class="col-9 my-3">
+
+                <div id="cont_annunci" class="row">
+
+                </div>
+                
+              </div>
+              <!-- END Elenco degli annunci -->
+
+
+            </div>
+
+        </main>
+
+        <footer>
+            
+        </footer>
+
+
+
+    </div>
+    
+   
+    <!-- Footer -->
+    <footer class="">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row mt-4">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Houses</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>Bestsellers</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-book fa-fw fa-sm me-2"></i>All </a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-user-edit fa-fw fa-sm me-2"></i>Our clients</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Execution of the contract</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Supply</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-backspace fa-fw fa-sm me-2"></i>Returns</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Regulations</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="far fa-file-alt fa-fw fa-sm me-2"></i>Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">About</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-white">Selling</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">123 Street</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">05765 NY</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-briefcase fa-fw fa-sm me-2"></i>Send us a book</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Write to us</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-at fa-fw fa-sm me-2"></i>Help in purchasing</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-shipping-fast fa-fw fa-sm me-2"></i>Check the order status</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fas fa-envelope fa-fw fa-sm me-2"></i>Join the newsletter</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  
+<!-- Footer -->
+
+  
+     <!-- LIbreria JS di Bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <!-- my JS -->
+     <script src="./js/annunci.js"></script>
+</body>
+</html>
